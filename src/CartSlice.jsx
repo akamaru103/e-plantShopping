@@ -8,6 +8,7 @@ export const CartSlice = createSlice({
   reducers: {
     // TASK 2
     addItem: (state, action) => {
+        console.log("addItem");
         const { name, image, cost } = action.payload; // Destructure product details from the action payload
         // Check if the item already exists in the cart by comparing names
         const existingItem = state.items.find(item => item.name === name);
