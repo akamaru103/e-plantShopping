@@ -35,7 +35,7 @@ const CartItem = ({ onContinueShopping }) => {
     if (item.quantity > 1) {
         dispatch(updateQuantity({ name: item.name, quantity: item.quantity - 1 }));
     } else{
-        dispatch(removeItem(item));
+        dispatch(removeItem(item.name));
     }
   };
 
@@ -61,7 +61,7 @@ const CartItem = ({ onContinueShopping }) => {
     };
 
   return (
-    <div className="cart-container">
+    <div className="cart-container">      
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
       <div>
         {cart.map(item => (
