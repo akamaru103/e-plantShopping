@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Typography */
+
+body,
+.cart_quantity_count {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, button, .product-title, .navbar-title{
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
 /* Reset some default styles */
 body, h1, ul {
     margin: 0;
@@ -6,7 +24,6 @@ body, h1, ul {
 
 /* Set a background color */
 body {
-    font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
@@ -46,6 +63,7 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 .product-list {
     display: flex;
@@ -105,6 +123,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .product-button:hover {
@@ -138,6 +157,7 @@ body {
 }
 .tag a{
     text-decoration: none;
+    padding-left: 20px;
 }
 .tag {
     width: 400px;
